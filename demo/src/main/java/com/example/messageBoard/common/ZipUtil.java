@@ -1,4 +1,4 @@
-package com.example.demo.base;
+package com.example.messageBoard.common;
 
 public class ZipUtil {
 
