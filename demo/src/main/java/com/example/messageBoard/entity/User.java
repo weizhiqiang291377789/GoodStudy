@@ -1,7 +1,6 @@
 package com.example.messageBoard.entity;
 
 import java.io.Serializable;
-
 public class User implements Serializable {
 
     private String name;//姓名
@@ -11,6 +10,45 @@ public class User implements Serializable {
     private String email;//邮箱
     private String number;//身份证号
     private String accountNumber;//账号
+    private StringBuffer str ;
+    private UserName data;
+
+    public User(){}
+    public UserName getData() {
+        return data;
+    }
+
+    public void setData(UserName data) {
+        this.data = data;
+    }
+
+    public User(String name) {
+        this.name = name;
+    }
+
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", gender='" + gender + '\'' +
+                ", passWord='" + passWord + '\'' +
+                ", phone='" + phone + '\'' +
+                ", email='" + email + '\'' +
+                ", number='" + number + '\'' +
+                ", accountNumber='" + accountNumber + '\'' +
+                ", str=" + str +
+                ", data=" + data +
+                '}';
+    }
+
+    public StringBuffer getStr() {
+        return str;
+    }
+
+    public void setStr(StringBuffer str) {
+        this.str = str;
+    }
 
     public String getName() {
         return name;
